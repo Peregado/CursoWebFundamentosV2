@@ -46,12 +46,39 @@
         margin-left: auto;
         margin-right: auto;
         text-align: left;
+        padding-left: 0;
         }
 
         hr{
         width: 50%;
         margin-left: auto;
         margin-right: auto;
+        }
+
+        li{
+            list-style-position: inside;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+        .menu li {
+            list-style: none;
+            /* margin: 10px; */
+            display: inline-block;
+            padding: 0;
+        }
+
+        .menu a {
+            background-color: #c1bebe;
+            padding: 16px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+        background-color: antiquewhite;
+        color: white;
         }
 
 </style>
@@ -62,6 +89,12 @@
     
     <h1><strong>João da Silva</strong></h1>
     <p>Brasileiro, solteiro, 30 anos.</p>
+
+    <ul class="menu">
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Youtube</a></li>
+    </ul>
 
 
 <h2><b>Objetivo</b></h2>
