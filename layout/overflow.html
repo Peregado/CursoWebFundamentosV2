@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fit content</title>
+    
+    <style>
+        body{
+            margin-bottom: 500px;
+        }
+        
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item {
+            width: fit-content;
+        }
+
+        .min-content .item {
+            width: min-content;
+        }
+
+        .max-content .item {
+            width: max-content;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container fit-content overflow-hidden">
+       <div class="item">lorem</div>
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facilis.</div>
+       <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem culpa libero minima nemo illum omnis. Obcaecati magnam ipsum officia consequuntur id numquam voluptates consectetur.</div> 
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis! Dolorum natus cum, sit sapiente atque minus error molestias libero repellat fugiat. Sequi qui libero error provident vero maxime laboriosam. Qui natus laborum ducimus, dolorem distinctio mollitia labore inventore assumenda repudiandae? Dolor quas explicabo provident quia veritatis quo dicta est corporis beatae. Itaque harum, praesentium reprehenderit a cumque ut quidem provident, ullam impedit perspiciatis, odio modi earum aliquam quaerat ad sapiente eos mollitia dolorem nulla.</div>
+    </div>
+
+
+    <div class="container min-content overflow-auto">
+       <div class="item">lorem</div>
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facilis.</div>
+       <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem culpa libero minima nemo illum omnis. Obcaecati magnam ipsum officia consequuntur id numquam voluptates consectetur.</div> 
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis! Dolorum natus cum, sit sapiente atque minus error molestias libero repellat fugiat. Sequi qui libero error provident vero maxime laboriosam. Qui natus laborum ducimus, dolorem distinctio mollitia labore inventore assumenda repudiandae? Dolor quas explicabo provident quia veritatis quo dicta est corporis beatae. Itaque harum, praesentium reprehenderit a cumque ut quidem provident, ullam impedit perspiciatis, odio modi earum aliquam quaerat ad sapiente eos mollitia dolorem nulla.</div>
+    </div>
+
+
+    <div class="container max-content overflow-auto">
+       <div class="item">lorem</div>
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facilis.</div>
+       <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem culpa libero minima nemo illum omnis. Obcaecati magnam ipsum officia consequuntur id numquam voluptates consectetur.</div> 
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corporis! Dolorum natus cum, sit sapiente atque minus error molestias libero repellat fugiat. Sequi qui libero error provident vero maxime laboriosam. Qui natus laborum ducimus, dolorem distinctio mollitia labore inventore assumenda repudiandae? Dolor quas explicabo provident quia veritatis quo dicta est corporis beatae. Itaque harum, praesentium reprehenderit a cumque ut quidem provident, ullam impedit perspiciatis, odio modi earum aliquam quaerat ad sapiente eos mollitia dolorem nulla.</div>
+    </div>
+
+</body>
+</html>
