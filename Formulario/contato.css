@@ -16,4 +16,40 @@ form {
     width: 90%;
     min-width: 28.125em;
     max-width: 35em;
+    background-color: #0e1010;
+    padding: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label,input,textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: #1d1f1f;
+}
+
+/* input:invalid,textarea:invalid {
+    background-color: rgb(196, 89, 89);
+ } */
+
+ INPUT:invalid:focus, TEXTAREA:invalid:focus {
+    background-color: red;
+    color: white;
+
+input:focus,textarea:focus {
+    background-color: white;
+    color: black;
+}
+
+legend {
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    color: #8e999a;
+    font-size: 1.3em;
 }
