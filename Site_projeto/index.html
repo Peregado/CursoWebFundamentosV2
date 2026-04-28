@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Patrimonial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segurança Prime</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/Site_projeto/Estilo.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Seu CSS externo -->
+  <link rel="stylesheet" href="Estilo.css">
 </head>
-
 
 <body class="bg-white font-sans">
 
-<!-- NAVBAR -->
-<nav class="bg-gray-950 text-white px-8 py-5 flex justify-between items-center">
+<!-- NAVBAR FIXA -->
+<nav class="fixed top-0 left-0 w-full bg-gray-950 text-white px-8 py-5 flex justify-between items-center z-50 shadow-lg">
   <h1 class="text-2xl font-bold tracking-wide">SEGURANÇA PRIME</h1>
 
+  <!-- MENU -->
   <div class="hidden md:flex gap-8 text-sm">
     <a href="#servicos" class="hover:text-yellow-400">Serviços</a>
     <a href="#diferenciais" class="hover:text-yellow-400">Diferenciais</a>
-    <a href="#sobre" class="hover:text-yellow-400">Sobre</a>
     <a href="#contato" class="hover:text-yellow-400">Contato</a>
   </div>
 
-  <button class="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold">
+  <!-- BOTÃO QUE ABRE O MODAL -->
+  <button onclick="abrirModal()" class="bg-yellow-500 text-black px-5 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition">
     Orçamento
   </button>
 </nav>
+
+<!-- ESPAÇO PARA COMPENSAR NAVBAR FIXA -->
+<div class="h-24"></div>
 
 <!-- HERO -->
 <section class="bg-gray-950 text-white py-28 px-6">
@@ -39,48 +44,24 @@
       </h1>
 
       <p class="mt-6 text-gray-400">
-        Reduza riscos operacionais, evite prejuízos e tenha controle total com uma equipe especializada em segurança patrimonial e escolta armada.
+        Reduza riscos operacionais, evite prejuízos e tenha controle total com uma equipe especializada.
       </p>
 
       <div class="mt-8 flex gap-4">
-        <button class="bg-yellow-500 px-6 py-3 rounded-lg text-black font-semibold">
+        <!-- BOTÃO ABRE MODAL -->
+        <button onclick="abrirModal()" class="bg-yellow-500 px-6 py-3 rounded-lg text-black font-semibold hover:bg-yellow-400 transition">
           Solicitar proposta
         </button>
 
-        <button class="border border-gray-600 px-6 py-3 rounded-lg">
-          Falar no WhatsApp
-        </button>
+        <a href="https://wa.me/5511999999999" target="_blank"
+          class="border border-gray-600 px-6 py-3 rounded-lg inline-block hover:bg-gray-800 transition">
+        Falar no WhatsApp
+        </a>
       </div>
     </div>
 
     <div class="bg-gray-800 h-80 rounded-2xl flex items-center justify-center text-gray-500">
       IMAGEM PROFISSIONAL
-    </div>
-
-  </div>
-</section>
-
-<!-- DOR DO CLIENTE -->
-<section class="py-20 px-6 text-center">
-  <h2 class="text-3xl font-bold mb-10">
-    Sua empresa está realmente protegida?
-  </h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-    <div class="p-6 border rounded-xl">
-      <h3 class="font-semibold mb-2">Risco de prejuízo</h3>
-      <p class="text-gray-600">Furtos e invasões podem gerar perdas irreversíveis.</p>
-    </div>
-
-    <div class="p-6 border rounded-xl">
-      <h3 class="font-semibold mb-2">Falta de controle</h3>
-      <p class="text-gray-600">Sem monitoramento eficiente, sua operação fica vulnerável.</p>
-    </div>
-
-    <div class="p-6 border rounded-xl">
-      <h3 class="font-semibold mb-2">Resposta lenta</h3>
-      <p class="text-gray-600">Sem equipe preparada, o tempo de reação aumenta o risco.</p>
     </div>
 
   </div>
@@ -92,17 +73,17 @@
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-    <div class="bg-white p-6 rounded-2xl shadow">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
       <h3 class="text-xl font-semibold mb-3">Segurança Patrimonial</h3>
-      <p class="text-gray-600">Controle de acesso, vigilância e proteção completa.</p>
+      <p class="text-gray-600">Proteção completa para empresas e condomínios.</p>
     </div>
 
-    <div class="bg-white p-6 rounded-2xl shadow">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
       <h3 class="text-xl font-semibold mb-3">Escolta Armada</h3>
       <p class="text-gray-600">Transporte seguro com planejamento estratégico.</p>
     </div>
 
-    <div class="bg-white p-6 rounded-2xl shadow">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
       <h3 class="text-xl font-semibold mb-3">Segurança Executiva</h3>
       <p class="text-gray-600">Proteção pessoal com discrição e eficiência.</p>
     </div>
@@ -110,69 +91,20 @@
   </div>
 </section>
 
-<!-- PROVA SOCIAL -->
-<section class="py-20 text-center px-6">
-  <h2 class="text-3xl font-bold mb-10">Resultados que comprovam</h2>
-
-  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-
-    <div>
-      <h3 class="text-3xl font-bold text-yellow-500">+500</h3>
-      <p>Clientes atendidos</p>
-    </div>
-
-    <div>
-      <h3 class="text-3xl font-bold text-yellow-500">+10 anos</h3>
-      <p>Experiência</p>
-    </div>
-
-    <div>
-      <h3 class="text-3xl font-bold text-yellow-500">24h</h3>
-      <p>Operação ativa</p>
-    </div>
-
-    <div>
-      <h3 class="text-3xl font-bold text-yellow-500">100%</h3>
-      <p>Equipe certificada</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- DIFERENCIAIS -->
-<section id="diferenciais" class="bg-gray-900 text-white py-20 px-6 text-center">
-  <h2 class="text-3xl font-bold mb-10">Por que escolher a Segurança Prime?</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-    <div>
-      <p>Tecnologia de ponta</p>
-    </div>
-
-    <div>
-      <p>Profissionais treinados</p>
-    </div>
-
-    <div>
-      <p>Resposta rápida</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA FORTE -->
+<!-- CTA -->
 <section class="bg-yellow-500 py-20 text-center px-6">
   <h2 class="text-4xl font-bold text-black">
     Solicite uma análise de risco gratuita
   </h2>
 
-  <button class="mt-8 bg-black text-white px-8 py-4 rounded-lg text-lg">
+  <!-- BOTÃO ABRE MODAL -->
+  <button onclick="abrirModal()" class="mt-8 bg-black text-white px-8 py-4 rounded-lg text-lg hover:bg-gray-800 transition">
     Falar com especialista
   </button>
 </section>
 
 <!-- CONTATO -->
-<section id="contato" class="py-20 px-6 text-center fade-up">
+<section id="contato" class="py-20 px-6 text-center">
   <h2 class="text-3xl font-bold mb-8">Fale com um especialista</h2>
 
   <a href="https://wa.me/5511999999999" target="_blank"
@@ -181,8 +113,8 @@
   </a>
 </section>
 
-<!-- BOTÃO FLUTUANTE -->
-<a href="http://intranet.policiamilitar.sp.gov.br/" target="_blank"
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5511999999999" target="_blank"
    class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:scale-110 transition">
   WhatsApp
 </a>
@@ -192,19 +124,59 @@
   <p>© 2026 Segurança Prime</p>
 </footer>
 
-<!-- SCRIPT ANIMAÇÃO -->
+<!-- ================= MODAL ================= -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+
+  <div class="bg-white rounded-2xl p-8 w-full max-w-md relative">
+
+    <!-- BOTÃO FECHAR -->
+    <button onclick="fecharModal()" class="absolute top-3 right-3 text-gray-500 text-xl">
+      ✕
+    </button>
+
+    <h2 class="text-2xl font-bold mb-6 text-center">
+      Solicitar contato
+    </h2>
+
+    <!-- FORMULÁRIO -->
+    <form class="flex flex-col gap-4">
+
+      <input type="email" placeholder="Seu email" class="border p-3 rounded-lg" required>
+
+      <input type="tel" placeholder="Seu telefone" class="border p-3 rounded-lg" required>
+
+      <button class="bg-yellow-500 text-black py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+        Enviar
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- ================= SCRIPTS ================= -->
 <script>
-  const elements = document.querySelectorAll('.fade-up');
+  // Abrir modal
+  function abrirModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  });
+  // Fechar modal
+  function fecharModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
 
-  elements.forEach(el => observer.observe(el));
+  // Fechar clicando fora
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+      fecharModal();
+    }
+  }
 </script>
 
 </body>
